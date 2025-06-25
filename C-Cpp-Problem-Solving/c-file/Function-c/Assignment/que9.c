@@ -10,16 +10,19 @@
 
 // n!/(n-r)!
 #include<stdio.h>
-Permutation(int,int);
+int Permutation(int,int);
 int main()
 {
     int n,r,Result;
-    printf("Enter number of item  and it's arragement ");
-    scanf("%d %d",&n,&r);
+    printf("Enter number of item  and it's arragement n = ");
+    scanf("%d", &n);
+
+    printf("r = ");
+    scanf("%d", &r);
 
     if(n>r){
         Result=Permutation(n,r); // actual argument 
-        printf(" Number of Permutation are = ");
+        printf(" Number of Permutation are = %d",Result);
     }
     else{
         printf("Invalid Inputs i.e n>r ");
@@ -27,17 +30,20 @@ int main()
 
     return 0;
 }
-Permutation(int x,int y){
+int Permutation(int x,int y){
 
-    int f=1,i,temp,z; 
-    temp=f;f=1,t=1
+    int f=1,i,temp=1,z;
 
-    for(i=1;i<=x;i++){x=3
-        // temp=temp*(x-y);t=1*1,1*
-        f=f*i; f=1,
+    for(i=1;i<=x-y;i++)
+    {
+        temp=temp*i;
     }
-    z=f/temp; 
 
+    for(i=1;i<=x;i++){ 
+        
+        f=f*i;
+    }
+
+    z=f/temp; 
     return z;
 }
-2 1 2
