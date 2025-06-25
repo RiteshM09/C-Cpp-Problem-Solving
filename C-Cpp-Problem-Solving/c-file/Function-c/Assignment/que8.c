@@ -1,19 +1,18 @@
 // 8. Write a function to calculate factorial of a number (TSRS)
 #include<stdio.h>
-int fact(int);
+long int fact(int);
 int main()
 {
-    int n,Result;
+    int n;
     printf("Enter a number = ");
     scanf("%d",&n);
 
-    Result=fact(n);    //actual argument 
-    printf("%d! = %d",n,Result);
+    printf("%d! = %ld",n,fact(n));
     return 0;
 }
 
-int fact(int x){ 
-    int f=1,i;
+long int fact(int x){ 
+    long int f=1,i;
     for(i=1;i<=x;i++)
     {
         f=f*i;
