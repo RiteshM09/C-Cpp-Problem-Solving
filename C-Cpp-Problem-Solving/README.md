@@ -1,2 +1,2 @@
 # C-Cpp-Problem-Solving
-here i'm going to practice programming problems.
+Solving practice programming problems.
