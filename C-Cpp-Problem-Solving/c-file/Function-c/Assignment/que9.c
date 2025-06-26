@@ -21,7 +21,7 @@ int main()
 
     if (n >= r)     // here 2 special cases are handled n>r and n=r
     {
-        Result = Permutation(n, r); // actual argument
+        Result = Permutation(n,r); // actual argument
         printf(" Number of Permutation are = %d", Result);
     }
     else
