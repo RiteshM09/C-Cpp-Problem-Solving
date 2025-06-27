@@ -10,7 +10,7 @@ int main(){
     printf("Area of circle = %.2f",n);//Actual Argument( Used to send data to function )
    return 0;
 }
-
+ 
 float circle(float x) // formal Argument ( Variables declared in the function definition that receive those values )
 {
     float Ar; 

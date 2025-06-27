@@ -2,10 +2,7 @@
 // (Return 1 if prime, otherwise return 0)
 // A prime number is a number greater than 1 that has only two factors: 1 and itself.
 // ex : // 2 3 5 7 11 13 17 19 23 29 31 37
-
-
 #include<stdio.h>
-
 int Prime(int);
 int main()
 {
@@ -13,6 +10,7 @@ int main()
     printf("Enter a nuber = ");
     scanf("%d",&n);
     result=Prime(n);
+    
     if(result==1)
         printf("\n Prime ");
     else 
@@ -22,15 +20,14 @@ int main()
 }
 int Prime(int x){
     int i=2,temp=0;
-    
-    if(x>=i){
-        for(i=2;x/2;i++){  
+    if(x<=1)return 0;
+
+        for(i=2;i<x;i++){ 
         if(x%i==0){ 
-          
         temp=1;
         }
     }
-    }
+
     if(temp==0)
         return 1; 
     else
