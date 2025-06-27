@@ -13,7 +13,7 @@ int main(){
     printf(" Next prime number after %d is =%d",n,next);
     return 0;
 }
-
+// function to find NextPrime using Prime funtion
 int NextPrime(int a){
     int new=a+1;
     while(a){
@@ -24,24 +24,17 @@ int NextPrime(int a){
     }
     return new;
 }
-
+// function to find no is prime or not
 int Prime(int x){
-    int i=2,temp=0;
-    
-    if(x<=1) return 0;
+    int i;
+    for(i=2;i<x;i++)
+        if(x%i==0)
+            break;
 
-        while(i<x/2){
-            if(x%i==0){
-            // printf("%d",x); 
-            temp++;
-            }
-        i++;
-        }
-
-    if(temp==0)
+    if(i==x)
         return 1;
-    else
-       return 0;
+    else 
+        return 0;
 
 }
 //first step - find prime no. return 1 if Prime and 0 if notPrime.

@@ -19,7 +19,8 @@ int main()
     return 0;
 }
 int Prime(int x){
-    int i=2,temp=0;
+    int i,temp=0;
+
     if(x<=1)return 0;
 
         for(i=2;i<x;i++){ 
