@@ -27,7 +27,7 @@ void PrintPrime(int x ,int y) //formal Argument
         }
      }
      if(i==j && i>1)
-        printf("%d ",j); 
+        printf("%d",i); 
     }
     
    
