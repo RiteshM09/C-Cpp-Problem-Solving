@@ -23,11 +23,11 @@ int main(){
 
 }
 void ArmstrongN(int n){
-    int count=0,Ldigit,sum=0,power,i;
+    int count=0,Ldigit,sum=0,power,i,j;
 
     i=n;
     // counting digit 
-    while(i!=0){ 
+    while(i){ 
         count++; // count=3,n=153,temp=0
         i=i/10;  
     } 
@@ -35,17 +35,15 @@ void ArmstrongN(int n){
     // extract digit and 
     i=n; // reset i 
 
-    while(i!=0){  // count=3, n=153 , i=1 , Ldigit=1
+    while(i){  // count=3, n=153 , i=1 , Ldigit=1
 
         Ldigit=i%10;       
         
         // calculate power^Ldigit
-        power=1;
 
-        for(int j=1;j<=count;j++) // n=153 , i=1 , Ldigit=1, power=1 , count=3, j=3 
-        {
+        for(power=1,j=1;j<=count;j++) // n=153 , i=1 , Ldigit=1, power=1 , count=3, j=3 
             power=power*Ldigit;
-        } 
+        
         sum=sum+power; // Ldigit=3 ,count=3 ,sum=27+125(+1)) Add Ldigit^count to sum variable 
         i=i/10; // so that when i=0 loop end 
     }
