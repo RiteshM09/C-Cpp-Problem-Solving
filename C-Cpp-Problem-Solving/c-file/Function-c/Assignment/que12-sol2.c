@@ -23,6 +23,5 @@ int NextPrime(int x){
             return i;
             break;
         }
-        
     }
 }   
