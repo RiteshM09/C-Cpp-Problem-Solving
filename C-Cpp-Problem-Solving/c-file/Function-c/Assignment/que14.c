@@ -32,9 +32,9 @@ void ArmstrongN(int n){
         i=i/10;  
     } 
 
-    // extract digit and 
+    // extract digit and
+     
     i=n; // reset i 
-
     while(i){  // count=3, n=153 , i=1 , Ldigit=1
 
         Ldigit=i%10;       
