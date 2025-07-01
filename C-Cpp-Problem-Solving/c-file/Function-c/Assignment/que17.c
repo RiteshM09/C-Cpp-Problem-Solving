@@ -8,7 +8,7 @@ int main()
     printf("Enter a Number = ");
     scanf("%d",&N);
     Result=ReverseN(N);
-    printf("Reverse of N = %d ",Result);
+    printf("Reverse of N =%d ",Result);
     return 0;
 }
 int ReverseN(int n){
@@ -18,7 +18,7 @@ int ReverseN(int n){
     rev=10*rev+(n%10);
     n=n/10;
     }
-
+    
     return rev;
 }
 
