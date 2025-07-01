@@ -7,7 +7,7 @@
 // 532
 // 5+2+3
 #include<stdio.h>
-SumOfDigit(int);
+int SumOfDigit(int);
 int main(){
     int N,Result;
     printf("Enter N= ");
@@ -17,7 +17,7 @@ int main(){
 
     return 0;
 }
-SumOfDigit(int n){
+int SumOfDigit(int n){
     if(n==0)
         return 0;
 
