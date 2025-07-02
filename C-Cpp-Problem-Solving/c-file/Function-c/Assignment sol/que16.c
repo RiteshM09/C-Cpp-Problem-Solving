@@ -12,7 +12,6 @@
 //step3 : if true the  skip the digit and move to next iteration
 //step4 : store the digit in a no. 
 //step5 : Note- the we got is in reverse so Reverse it again using a loop 
-
 int RemoveDigit(int,int);
 #include<stdio.h>
 int main()
@@ -66,7 +65,3 @@ int RemoveDigit(int n ,int rem){
     return temp;
 
 }
-
-// (ex: 123535)
-//digit to remove (e.g. 5)
-// remove all occurrences of 5 from number 
