@@ -24,14 +24,15 @@ void ReverseN(int n){
 
 /*
 
-ReverseN(123)
+ReverseN(542)
 │
-├─ prints 3      ← (123 % 10)
+├─ prints 2      ← (542 % 10)
 │
-└── ReverseN(12)
-     ├─ prints 2 ← (12 % 10)
-     └── ReverseN(1)
-           ├─ prints 1 ← (1 % 10)
+└── ReverseN(54)
+     ├─ prints 4 ← (54 % 10)
+     └── ReverseN(5)
+           ├─ prints 5 ← (5 % 10)
            └── ReverseN(0) → ends
 
+ans - 245
 */
