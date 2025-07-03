@@ -1,12 +1,15 @@
 //Write a recursive function to find nt term of a Fibonacci series
 
-// function             -      fib(n) -  0112358..n 
-// R.C                  -    fib(n-1) - (0112358)(print(fib n))
+// function             -  PRINTfib(n) -  0112358..n 
+// R.C                  -  PRINTfib(n-1) - (0112358)(print(fib n))
+//                         PRINTfib(n-1) - 
+
+//                    calculate fibonacci next term i.e (fib n) in a function
                         
 // R.C                  -          FibonacciN(n-1) -  (0 1 1 2)+1    (0 1 1 2 3)+2
                                    
 //fibonacci series 
-// for n= 0 1 2 3 4 5 6 7 8  9  10 11 12  13....
+// for n= 0 1 2 3 4 5 6 7  8  9  10 11 12  13....
 //term    0 1 1 2 3 5 8 13 21 34 55 89 144....
 #include <stdio.h>
 int Fib(int); 
@@ -14,7 +17,7 @@ void PrintFib(int);
  
 int main() {
     int N;
-
+    printf("Enter n term of fibonacci serie:");
     scanf("%d", &N);
     PrintFib(N);
 }
