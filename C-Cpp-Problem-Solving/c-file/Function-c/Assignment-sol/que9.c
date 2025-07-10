@@ -7,7 +7,7 @@
 // A,B,C
 // AB BC AC CA CB BA
 
-// n!/(n-r)!
+// n!/(n-r)! 
 #include <stdio.h>
 int Permutation(int, int);
 int main()
@@ -36,17 +36,18 @@ int Permutation(int x, int y)
 
     int f = 1, i, temp = 1, z;
 
-    for (i = 1; i <= x - y; i++)
+    for (i = 1; i <= x - y; i++) // fact of x-y (fact of n-r)
     {
         temp = temp * i;
     }
 
-    for (i = 1; i <= x; i++)
+    for (i = 1; i <= x; i++) // calculate factorial (fact of n )
     {
         f = f * i;
     }
 
-    z = f / temp;
+    z = f / temp; // divide both P=fact(n)/fact(n-r)
     return z;
 }
 
+// 
