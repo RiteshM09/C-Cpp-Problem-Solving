@@ -10,15 +10,15 @@
 // round 1: 
 // '10    30   40   60   70   15   20   80   50   90' - observe greater values are swapped at right
 // round 2: 
-// '10    30   40   60   15   20   70   50   80   90'
+// '10    30   40   60   15   20   70   50   80   90' 
 // round 3: 
-// '10    30   40   15   20   60   50   70   80   90'
+// '10    30   40   15   20   60   50   70   80   90' 
 // round 4: 
-// '10    30   15   20   40   50   60   70   80   90'  
+// '10    30   15   20   40   50   60   70   80   90' 
 // round 5: 
 // '10    15   20   30   40   50   60   70   80   90'  
 // round 6: 
-// '10    15   20   30   40   50   60   70   80   90' 
+// '10    15   20   30   40   50   60   70   80   90'  
 
 
 
@@ -40,7 +40,7 @@ int main()
 
     printf("\nSorted values = ");
     for(r=0;r<=9;r++){ 
-     for(i=0;i<=8-r;i++) // after each round the loop exclude last swapped value (the greatest one)  
+     for(i=0;i<=8;i++) // after each round the loop exclude last swapped value (the greatest one)  
      {
         if(a[i]>a[i+1]) { // a[i] 30, a[i+1] = 10 if left is greater than right array swap them
             t=a[i];
