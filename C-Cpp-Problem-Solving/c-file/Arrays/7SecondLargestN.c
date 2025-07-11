@@ -1,6 +1,8 @@
 // Write a program to find second largest in an array. Take array values from the user.
 //input  - 10 20 40 20 90 10 35 80 75 60
 //output - 80
+//edge case - if all values are same
+// total time - 2hr
 #include<stdio.h>
 int main()
 {
@@ -25,15 +27,17 @@ int main()
             second_max=max;
             max=a[i];
         }
-        else // again compare a[i] with to second_largest value
+        else // again compare a[i] with secon_largest value
         {
             if(a[i]>second_max)
                 second_max=a[i];
         }
     }  
-    printf("Largest Number = %d",max);
-    printf("\nSecond Largest Number = %d",second_max);
-    return 0;
+    if(max == second_max)//edge case
+        printf("No second largest number (all elements may be equal).\n");
+    else
+        printf("Second Largest Number = %d", second_max);
+
 }
 
 
