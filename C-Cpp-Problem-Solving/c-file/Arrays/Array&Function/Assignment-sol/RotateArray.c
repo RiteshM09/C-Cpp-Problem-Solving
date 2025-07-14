@@ -47,11 +47,11 @@ void RotateArray(int A[],int S,int n,int d) // arr, size, Position, direction
        }
        else if(d==-1){ //postion L, Size S=5, Direction d=2 , A[] = {32, 29, 40, 12, 70}
         flag=A[0];
-        for(i=0,;i<=S-2;i++) // i=4, flag=32 , S=5, a[0]=29 a[1]=29 A[5]={29, 40, 12, 12, 32}
+        for(i=0;i<=S-2;i++) // i=, flag=32 , S=5, a[0]=29 a[1]=29 A[5]={29, 40, 12, 12, 32}
         {
             A[i]=A[i+1];//
         }
-        A[S-1]=flag;//
+        A[S-1]=flag;//return first element value to last element
        }
 
      }
