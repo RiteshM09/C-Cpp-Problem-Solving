@@ -22,7 +22,8 @@ int main()
     for(i=0;i<s;i++)
         scanf("%d",&a[i]);
 
-    Count_Duplicate(a,s);
+    
+    printf("Count of Duplicate items occuring more than 2 time are: %d ",Count_Duplicate(a,s));
     return 0;
 }
 int Count_Duplicate(int A[],int size){
@@ -57,9 +58,9 @@ int Count_Duplicate(int A[],int size){
             j++; // increment j to next index 
             }
 
-        printf("Count of Duplicate items occuring more than 2 time are: %d ",count);
+        
 
-    return 0;
+    return count;
 }
 
 // 8
