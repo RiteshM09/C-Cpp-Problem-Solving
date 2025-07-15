@@ -44,13 +44,50 @@ int Count_Duplicate(int A[],int size){
         printf("%d ",A[i]);
 
     printf("\n");
-        for(i=0;i<size;i++){
-            if(A[i]==A[i+1])
+        i=0,j=1;
+        while(i<=size-2) // i is previous value than j(size-1) i.e(i=size-2)
             {
-            }
-        }
+                if(A[i]==A[j])// even i==j appears 2 or more times still count it as 1
+                    count++;
 
-        printf("%d ",count);
+                 while(A[i]==A[j])// increment j till duplicate found, before: count+1 time and j more to next index
+                    j++;
+
+            i=j; // before incrementing j make i as j, so that i should be in previous index than j 
+            j++; // increment j to next index 
+            }
+
+        printf("Count of Duplicate items occuring more than 2 time are: %d ",count);
 
     return 0;
 }
+
+// 8
+// 0 1 2 3 4 5 6 7 index
+// 2 2 3 3 2 2 4 4  
+// sorted
+// 2 2 2 2 3 3 4 4 i=0 -> n-1
+// i=2
+// j=22233344 j=1 - n-1
+
+// i=2
+// j=22233344 , count=
+
+// i=2 
+// j=22233344
+
+// i=2
+// j=22233344
+
+// i=3
+// j=22233344
+
+// i=3
+// j=22233344
+
+// i=4
+// j=22233344
+
+// i=4
+// j=22233344
+
