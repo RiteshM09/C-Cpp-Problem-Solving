@@ -5,14 +5,14 @@
 int main()
 {
     int a[3][3],b[3][3],i,j,product[3][3],sum,k;
-    printf("Enter 1st array: element ");
+    printf("Enter 1st matrix element ");
     for(int i=0;i<=2;i++)
     {
         for(int j=0;j<=2;j++)
             scanf("%d",&a[i][j]);
         printf("\n");
     }
-    printf("Enter 2nd array: element");
+    printf("Enter 2nd matrix element");
     for(int i=0;i<=2;i++)
     {
         for(int j=0;j<=2;j++)
@@ -20,14 +20,14 @@ int main()
         printf("\n");
     }
 
-    printf("\nPrint 1st array element \n");
+    printf("\nPrint 1st Matrix element \n");
     for(int i=0;i<=2;i++)
     {
         for(int j=0;j<=2;j++)
             printf("%d ",a[i][j]);
         printf("\n");
     }
-    printf("\nPrint 2nd array element\n");
+    printf("\nPrint 2nd Matrix element\n");
     for(int i=0;i<=2;i++)
     {
         for(int j=0;j<=2;j++)
@@ -35,7 +35,7 @@ int main()
         printf("\n");
     }
 
-    printf("\nProduct of 2 array of order 3*3 :\n");
+    printf("\nProduct of 2 Matrices of order 3*3 :\n");
     for(i=0;i<=2;i++)
     {
         for(j=0;j<=2;j++)
