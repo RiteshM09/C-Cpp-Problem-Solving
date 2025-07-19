@@ -1,6 +1,5 @@
 //Write a program to print the transpose of a given square matrix.
-// note this will only works with when matrix is a square matrix.
-// transpose without using a diffent matrix
+
 #include<stdio.h>
 int main()
 {
