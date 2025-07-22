@@ -5,7 +5,7 @@
 #include<string.h>
 int main()
 {
-    char str[50],space=' ';
+    char str[50];
     int i,count;
 
     printf("Enter a string: ");
@@ -14,7 +14,7 @@ int main()
     str[strlen(str)-1]='\0';
    
     for(i=0,count=0;i<=str[i];i++) 
-        if(str[i]==space)
+        if(str[i]==' ')
             count++;
 
     printf("%d space's ",count);
