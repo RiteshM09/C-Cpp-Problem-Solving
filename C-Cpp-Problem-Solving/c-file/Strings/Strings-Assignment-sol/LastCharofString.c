@@ -1,9 +1,9 @@
-// Find last character of string.
+// funtion to return last character of a string.
 // Ritesh
 // h
 #include<stdio.h>
 #include<string.h>
-char LastCharacter(char s[]);
+int LastCharacter(char s[]);
 int main()
 {
                 // 0   1   2   3   4   5   0  0  0  0
@@ -19,7 +19,7 @@ int main()
     printf("\n");
     return 0;
 }
-char LastCharacter(char s[])//ex: length(Ritesh) = 0123456
+int LastCharacter(char s[])//ex: length(Ritesh) = 0123456
 {
     return s[strlen(s)-1];// ex: s[6-1] - s[5] - 
 }   
