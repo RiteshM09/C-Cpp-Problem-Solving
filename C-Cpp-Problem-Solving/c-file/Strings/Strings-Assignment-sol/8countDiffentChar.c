@@ -20,7 +20,7 @@ int main()
 
     for(i=0;str[i];i++)
     {
-        if( (str[i]>='A' && str[i]<='Z') || (str[i]>='a' && str[i]<'z') )
+        if( (str[i]>='A' && str[i]<='Z') || (str[i]>='a' && str[i]<='z') )
             Alpha++;
         else if(str[i]>='0' && str[i]<='9')
              Digit++;
