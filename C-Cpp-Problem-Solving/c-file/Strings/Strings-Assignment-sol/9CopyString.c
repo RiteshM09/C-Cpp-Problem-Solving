@@ -1,4 +1,4 @@
-//Write a program in C to copy one string to another char array.
+//Write a program in C to copy one string to another char array. without using strcpy()
 /*
 input: enter a sting: HEllO
 output: copied string: HEllO
@@ -15,8 +15,12 @@ int main()
 
     str[strlen(str)-1]='\0';
 
-    strcpy(copy,str);
-    printf("copied string: %s",str);
+    for(i=0;str[i];i++)
+    {
+        copy[i]=str[i];
+    }
+    copy[i]='\0';
+    printf("copied string: %s",copy);
 
     return 0;
 }
