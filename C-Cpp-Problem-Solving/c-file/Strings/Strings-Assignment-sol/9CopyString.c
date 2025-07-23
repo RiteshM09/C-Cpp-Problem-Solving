@@ -19,6 +19,7 @@ int main()
     {
         copy[i]=str[i];
     }
+    
     copy[i]='\0';
     printf("copied string: %s",copy);
 
