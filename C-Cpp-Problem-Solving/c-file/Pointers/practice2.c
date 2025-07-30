@@ -1,3 +1,4 @@
+// array and string 
 #include<stdio.h>
 #include<string.h>
 int length(char *p);
