@@ -6,10 +6,10 @@ Agenda:
 5  Base address✅
 6  Data type of pointer✅
 7  Extended concept of pointers -*x, **y, ***z ✅
-8  Pointer's Arithmetic 
-9  Call by reference
-10 Pointers and arrays
-11 Pointers and stings
+8  Pointer's Arithmetic ✅
+9  Call by reference ✅
+10 Pointers and arrays ✅
+11 Pointers and stings ✅
 12 Array of pointers
 13 Pointer to array
 14 Wild pointer
