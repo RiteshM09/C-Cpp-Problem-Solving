@@ -21,7 +21,6 @@ void input(int **q,int n,int size[]){
     for(i=0;i<n;i++){ 0 1 2 3 
         for(j=0;j<size[i];j++) p[i] = 0,j = 
         scanf("%d",*((q+i)+j));
-   
 
     }
 
