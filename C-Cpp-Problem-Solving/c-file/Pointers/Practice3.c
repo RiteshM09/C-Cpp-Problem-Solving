@@ -1,5 +1,6 @@
 // Arrays of Pointer.
-// input data in all 4 arrays using function.
+// input and display data in all 4 arrays using function.
+// 2d array with different size's
 #include<stdio.h>
 void input(int **,int,int size[]);
 void display(int *,int size);
@@ -20,7 +21,7 @@ int main()
 }
 void display(int *p,int size){
     int i;
-    printf("\ndisplay 4 arrays:")
+    printf("\ndisplay %d arrays:",size);
     for(i=0;i<size;i++)
         printf("%d ",*(p+i));
     printf("\n");
@@ -33,7 +34,7 @@ void input(int **q,int n,int size[]){
     {
         printf("Enter %d numbers = ",size[i]);
         for(j=0;j<size[i];j++)// p[i] = i=0 - a, i=1 - b, i=2 - c, i=3 - d ; j = a[0] - size[a] -  
-        scanf("%d",*(q+i)+j);
+            scanf("%d",*(q+i)+j);
 
     }
 
@@ -59,16 +60,14 @@ address a in terms of p
  p[2] = &c[0]
  p[3] = &b[0]
 
- 
-
-in a address of a[1]
+in a[i] address's of a[1],a[2],a[3],a[4]
  p[0]+1 = &a[1]  ,,&a[i]=p[0]
  p[0]+2 = &a[2]
  p[0]+3 = &a[3]
  p[0]+4 = &a[4]
 
   p[0]+j = &a[j] 
-*(q+i)+j
+*(q+i)+j 
 */ 
 
 
