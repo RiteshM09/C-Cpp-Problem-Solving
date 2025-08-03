@@ -16,16 +16,13 @@ int main()
     str1[strlen(str1)-1]='\0';
 
     TransformtoUPPERCASE(str1);
+    printf("NEW STRING : %s",str1);
     return 0;
 }
 void TransformtoUPPERCASE(char s[])
 {
     int i=0;
-    
     for(i=0;s[i];i++)
-        if(s[i]>'a' && s[i]<'z') 
+        if(s[i]>='a' && s[i]<='z') 
             s[i]=s[i]-32;
-
-    printf("String : %s",s);
-
 }
