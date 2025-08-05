@@ -36,17 +36,15 @@ int main()
     return 0;
 }
 void findCharacter(char str[],int start,int end,char ch){
-    int i;
-        if(ch!=str[i])
-            printf("Character not found "); // edge case if character not present
-        else 
-        {
-            for(i=start;i<str[end];i++)
+    int i,found=0;
+    
+            for(i=start;i<end;i++)
             {
-                if(ch==str[i])
+                if(str[i]==ch){
                     printf("\nCharacter %c found at index %d ",ch,i);  
+                    found=1;
+                }     
             }  
-        }
-         
-        
+            if(found==0)//edge case for invalid character
+                printf("Character '%c' not found in the given range.\n", ch);
 }
