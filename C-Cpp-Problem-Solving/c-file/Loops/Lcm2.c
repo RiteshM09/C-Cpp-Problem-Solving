@@ -1,5 +1,5 @@
 //find the LCM (Least Common Multiple) of two numbers 
-//LCM using factorization 
+//LCM using Prime factorization 
 /*
 input : 4 6 
 output: 12 
@@ -12,8 +12,6 @@ output: 21
 
 input : 8 12
 output: 24
-
-Lcm = a*b/hcf more optimize, less time complexity
 */
 
 #include<stdio.h>
