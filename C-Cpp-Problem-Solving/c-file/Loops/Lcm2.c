@@ -1,4 +1,5 @@
 //find the LCM (Least Common Multiple) of two numbers 
+//LCM using factorization 
 /*
 input : 4 6 
 output: 12 
@@ -19,13 +20,37 @@ Lcm = a*b/hcf more optimize, less time complexity
 #include <stdlib.h> 
 int main()
 {
-    int a,b,i=1;
+    int a,b,i=2,L=1,flag=0;
     printf("Enter 2 Number : ");
     scanf("%d%d",&a,&b);
     a = abs(a);// edge case(convert negative no. to positive)
     b = abs(b);
-    //find hcf 
-    
+
+    if (a == 0 || b == 0) {
+            printf("LCM = 0");
+            return 0;
+        }
+
+    while(a>1 || b>1){
+        
+    if(a%i==0){
+        a=a/i;
+        flag=1;
+    }
+    if(b%i==0){
+        b=b/i;
+        flag=1;
+    }    
+    if(flag==1)
+    {
+        L=L*i;
+        flag=0;
+    }
+    else
+        i++;
+   }
+   printf("LCM = %d",L);
+
 
     return 0;
 }
