@@ -21,7 +21,6 @@ int main()
 }
 char* TrimSide(char s[])
 {      
-    char ch; 
     int i=0,j,len;
     while(s[i]==' ')// trim from start 
         i++;
