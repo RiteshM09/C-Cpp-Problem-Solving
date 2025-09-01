@@ -36,8 +36,8 @@ int main()
 
     while(s[i])
     {
-        // Detect transition: space to non-space
-        if (s[i] == ' ' && s[i+1] != ' ' && s[i+1] != '\0')
+        // Detect start of the word 
+        if (s[i] != ' ' && (s[i+1] == ' ' || s[i+1] == '\0'))
             count++;
         i++;
     }
@@ -49,7 +49,7 @@ int main()
     if(count==0)// edge case
         return 0;
     
-    return count+1;
+    return count;
 }
 
 
