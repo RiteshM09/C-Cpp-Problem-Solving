@@ -35,8 +35,8 @@ int CountWords(char s[])
     while(s[i])
     {
         flag=0;// reinitilize flag for next word
-        while(s[i]!=' ' && s[i]) // check s[i] is non space and inside the string
-        {
+        while(s[i]!=' ' && s[i]) // check charachter is non space and inside the string
+        {                        // loop for each word
             flag++;
             i++;
         }
