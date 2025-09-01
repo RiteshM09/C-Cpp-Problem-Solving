@@ -24,7 +24,9 @@ int main()
     str[strlen(str)-1]='\0';  
     
     printf("Total words:%d",CountWords(str));
-    return 0;  
+    printf("\n"); 
+    return 0; 
+    
 }
 int CountWords(char s[])
 {      

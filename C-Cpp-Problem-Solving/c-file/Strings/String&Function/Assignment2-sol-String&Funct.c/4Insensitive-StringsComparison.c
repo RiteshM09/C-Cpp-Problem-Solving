@@ -1,5 +1,4 @@
 // Write a function to do case insensitive comparison of two strings.
-// Write a function to count words in a given string
 /*
 input : Ant
       : anT
@@ -44,9 +43,5 @@ int Insensitive_comparision(char s1[],char s2[])
         }
         return 0;
     }
-    
-
 }
-
-
  
