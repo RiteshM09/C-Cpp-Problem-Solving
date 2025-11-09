@@ -35,6 +35,5 @@ int main()
     return 0;
 }
 void Count_Each_Char(char str[])
-{
-              
+{          
 }
