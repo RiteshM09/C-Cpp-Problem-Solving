@@ -9,8 +9,8 @@ int main()
     for(i=0;i<=9;i++)
         scanf("%d",&a[i]);
 
-    for(r=0;r<=9;r++){
-     for(i=0;i<=8-r;i++)
+    for(r=1;r<=9;r++){
+     for(i=0;i<=9-r;i++)
      { 
         if(a[i]<a[i+1])
         {
