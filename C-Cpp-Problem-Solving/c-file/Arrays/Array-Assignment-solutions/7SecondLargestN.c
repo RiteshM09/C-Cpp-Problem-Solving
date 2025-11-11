@@ -24,8 +24,8 @@ int main()
     {
         if(a[i]>max) // 75 > 90  a[i]=90 max=90 , second_max=80
         {
-            second_max=max;
-            max=a[i];
+            second_max=max; // imp first give max value to second max then 
+            max=a[i];       // a[i] to max
         }
         else // again compare a[i] with secon_largest value
         {
