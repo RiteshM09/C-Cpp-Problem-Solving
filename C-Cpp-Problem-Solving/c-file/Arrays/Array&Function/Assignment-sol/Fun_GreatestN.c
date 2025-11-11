@@ -2,6 +2,13 @@
 // (TSRS)
 // input - 12 21 32 100
 // output - 100
+
+
+// here, the data of array a is not copied into array b.
+// but, a and b both refer to the same array in memory.
+// b is just another pointer variable that points to the same memory location as a
+//Any changes done to b[i] inside input function [Max_Number()] will also change a[i] in the main function
+
 #include<stdio.h>
 int greatestN(int b[],int n); // Function decleration
 int main()
