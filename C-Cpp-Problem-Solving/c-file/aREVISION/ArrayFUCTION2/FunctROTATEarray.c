@@ -32,7 +32,7 @@ int main()
 void ROTATEarray(int b[],int size,int Pos,int Dir)
 { 
     int i,temp,r;
-    for(r=1;r<=Pos;r++){
+    while(Pos){
     
         if(Dir==-1)
         {
@@ -52,6 +52,7 @@ void ROTATEarray(int b[],int size,int Pos,int Dir)
             }
             b[0]=temp;
         }
+        Pos--;
     }
 
     printf("Print: ");
