@@ -39,13 +39,11 @@ void UniqueElements(int A[],int S)
 {
     sort(A,S); // 10 10 20 20 20 30 30 40
     int i;
-    printf("sorted array :");
-    for(int i=0;i<S;i++)
-        printf("%d ",A[i]);
-    
-    for(i=0;i<=S-1;i++)// for a unique i , i != prev element && i != next element
+
+    printf("UNIQUE ELEMENT : ");
+    for(i=0;i<=S-1;i++)// condition for unique i , i != prev element && i != next element
     {
-        if(((i==0) || (A[i]!=A[i-1]) &&  (i==S-1) || (A[i]!=A[i+1])))// for i=SECOND to SECOND_LAST && check seperatly check for i=FIRST and i=LAST
+        if(((i==0) || (A[i]!=A[i-1])) &&  ((i==S-1) || (A[i]!=A[i+1])))//check for i=SECOND to SECOND_LAST && check only next_element for i=FIRST & LAST_ELEMENT when i=LAST
               printf("%d ",A[i]);
     }
 }
