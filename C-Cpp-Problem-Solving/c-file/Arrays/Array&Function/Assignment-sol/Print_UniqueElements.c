@@ -35,17 +35,17 @@ void Print_unique(int A[],int size){
 
     printf("\nUnique items are:");
     i=0;
-    if(A[i]!=A[i+1])
-        printf("%d ",A[i]);
+    if(A[i]!=A[i+1]) // check for First_element, if first_Element == next_element
+        printf("%d ",A[i]); 
     i=1;
-    while(i<=size-2){
+    while(i<=size-2){// check for second to second last element
         if(A[i]!=A[i+1] && A[i]!=A[i-1])
             printf("%d ",A[i]);
             
         i++;
 
     }
-    if( A[size-1]!=A[size-2])
+    if( A[size-1]!=A[size-2])// check for Last element if LAST_ELEMENT == PREV_Element
         printf(" %d",A[size-1]);
 
 }
