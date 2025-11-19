@@ -1,5 +1,5 @@
 //Write a function to Reverse a number
-// 
+//Has better solution than this 
 int ReverseN(int);
 #include<stdio.h>
 int main()
