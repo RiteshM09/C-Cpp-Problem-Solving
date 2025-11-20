@@ -35,9 +35,9 @@ int PalindromeString(char s[])
     len=strlen(s);
     // Reverse string
     for(i=0;i<len/2;i++) // 0 to len/2 
-        if(s[i]==s[len-1-i])//
-            return 1;
-    return 0;
+        if(s[i]!=s[len-1-i])
+            return 0;// if mismatch found r
+    return 1;// loop compter all matched
 }
 
  
