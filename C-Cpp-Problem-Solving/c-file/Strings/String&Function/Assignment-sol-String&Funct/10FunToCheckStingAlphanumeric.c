@@ -36,17 +36,23 @@ int Check_Alphanumeric(char s[])
         if((s[i]>='a' && s[i]<='z') || (s[i]>='A' && s[i]<='Z')){
             HasAlpha=1;
         }
-        else if(s[i]>='1' && s[i]<='9'){
+        else if(s[i]>='0' && s[i]<='9'){
             HasDigits=1;
         }
         else{
-            return 0;      
+            return 0;    //character is neither alpha nor digit  
         } 
            
     }
-    if(HasAlpha==1 && HasDigits==1)   
+    if(HasAlpha==1 || HasDigits==1)   
         return 1;
     else
         return 0;
 }
 
+// User123	    Valid	    Contains only letters and numbers.
+// SecureP@ss	Non-Valid	Contains the special character @.
+// FileName_A	Non-Valid	Contains an underscore _.
+// Address 45	Non-Valid	Contains a space .
+// 0800Number	Valid	    Contains only digits and letters.
+// A!B@C#D	    Non-Valid	Contains multiple special characters (!, @, #).
