@@ -73,11 +73,11 @@ char* trim(char s1[])// --Hello--world--
     for(j=0;s1[j];i++,j++)
         s1[j]=s1[i];
     
-    s1[j] = '\0'; 
-    
-    for(len=j-1;len >= 0 && s1[len] == ' ';len--); //j=12
 
-    s1[len+1]='\0';
+    len = strlen(s1);
+    for(j=len-1;len >0 && s1[j] == ' ';j--); //j=12
+
+    s1[j+1]='\0';
 
     return s1;
 }
