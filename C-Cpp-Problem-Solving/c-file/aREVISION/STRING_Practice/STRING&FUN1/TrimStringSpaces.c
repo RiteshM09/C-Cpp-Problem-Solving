@@ -33,9 +33,6 @@ char* TrimSpaces(char s[])
         s[j]=s[i];
         i++;
     }
-    s[i]='\0';//place null at last 
-    s[j]='\0';
-
     int len;
     len=strlen(s)-1;      // 012345
                           // hello\0
