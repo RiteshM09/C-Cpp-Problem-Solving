@@ -58,10 +58,12 @@ int Case_Insensitive_comparision(char s1[],char s2[])
     i=0;
     while(s1[i]!='\0' && s2[i]!='\0')
     {
+        // if found non equal
         if(s1[i]!=s2[i])
             return 0;
         i++;
     }
+    // if loop is complete, it means both are equal
     if(s1[i]==s2[i])
         return 1;
     else    
