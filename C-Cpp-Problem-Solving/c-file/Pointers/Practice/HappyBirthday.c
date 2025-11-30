@@ -1,5 +1,5 @@
 #include<stdio.h>
-int Happy_Birthday(int *);
+void Happy_Birthday(int *);
 int main()
 {
     int age=20;
@@ -10,10 +10,9 @@ int main()
     printf("%d\n",*p_Age);
 
     Happy_Birthday(&age);
-    printf("%d\n",age);
+    printf("You are %d years old \n",age);
     return 0;
 }
-int Happy_Birthday(int *p){ //call by reference 
+void Happy_Birthday(int *p){ //call by reference 
     (*p)++;
-    return *p;
 }
