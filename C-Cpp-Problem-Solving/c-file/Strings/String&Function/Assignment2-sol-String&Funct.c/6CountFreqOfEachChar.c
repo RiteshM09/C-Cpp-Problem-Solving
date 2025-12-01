@@ -34,6 +34,22 @@ int main()
 
     return 0;
 }
-void Count_Each_Char(char str[])
-{          
+void Count_Each_Char(char s[]){
+        int i,j,count,checked[50]={0};
+
+        for(i=0;s[i];i++)
+        {
+                 if (checked[i]==-1) {
+                        continue;
+                 }
+
+                for(j=0,count=0;s[j];j++)
+                {
+                        if (s[i]==s[j]){
+                                count++;
+                                checked[j]=-1;
+                        }      
+                }
+                printf("%c appeared %d times \n",s[i],count);
+        }
 }
