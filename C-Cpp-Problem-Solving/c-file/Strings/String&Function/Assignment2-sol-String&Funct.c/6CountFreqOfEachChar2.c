@@ -38,6 +38,8 @@ void Count_Each_Char(char s[]){
     int i, freq[128]={0};
 
     for(i=0;s[i]!='\0';i++) 
+    // For the current character (s[i]), we use its ASCII value as an index 
+    // into the 'freq' array and increment the count at that position.
         freq[s[i]]++;
 
     for(i=0;i<128;i++)
