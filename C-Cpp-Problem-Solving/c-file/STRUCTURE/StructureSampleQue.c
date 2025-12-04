@@ -35,8 +35,6 @@ int main()
     printf("\n--- Output ---\n");
     for(i=0;i<3;i++)
         printf("\n%d %s %.2f",s[i].rollno, s[i].name, s[i].percentage);
-    
-
 
     return 0;
 }
