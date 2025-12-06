@@ -24,7 +24,7 @@ struct Employee input(){
     fflush(stdin);
     printf("Enter name: ");
     fgets(e.name,30,stdin);
-    e.name[strcspn(e.name, "\n")] = '\0';
+    e.name[strcspn(e.name, "\n")] = '\0';// return length of e.name at \n index, then place \0 in that position  
     printf("Enter salary: ");
     scanf("%f",&e.salary);
 
