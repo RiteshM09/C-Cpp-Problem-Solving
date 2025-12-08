@@ -48,4 +48,5 @@ void extract_string(char *str, int start_index, int end_index, char *result){
         result[j]=str[i];
             j++;
     }   
+    result[j]='\0';// always add null at last position for safety
 }
