@@ -39,7 +39,7 @@ void BubbleSort(int *ptr,int size)
                 swapped=1;
             }   
         }
-    // if no swap in entire pass, Array is sorted
+    // if no swap in inner(j)loop ,means Array is sorted
         if(swapped==0)
             break;
     }
