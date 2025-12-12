@@ -64,11 +64,12 @@ void TIME_difference(struct TIME first,struct TIME second){
 
         5680/3600 = 1hr(1hr and something )
         then, cal leftover minutes
-         diff=2080%3600 = 
-         
-        ( 5680%3600 )5680-3600 = 2080sec
+
+         diff(2080) = 5680%3600
+        ( 5680%3600 ) = 2080sec (something)
+
         2080/60 = 34min and something 
-    
+        ( 2080%60 ) = 40sec (something )
         2080%60 = 40sec 
 
         (2080)/60 = 34min
