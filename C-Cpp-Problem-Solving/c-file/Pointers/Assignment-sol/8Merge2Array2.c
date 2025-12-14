@@ -2,7 +2,7 @@
 // both array are soted in non-decending order 
 // [void merge(int *arr1,int size1,int *arr2,int size2,int *arr3)];
 // logic : start loop from end 
-// works when, array has free space at end ex:arr1
+// only works when, array has free space at end ex:arr1
 #include<stdio.h>
 void merge(int *arr1,int size1,int *arr2,int size2);
 int main()
