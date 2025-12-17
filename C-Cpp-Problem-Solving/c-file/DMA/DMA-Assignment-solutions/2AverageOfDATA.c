@@ -23,16 +23,12 @@ Output : Average = 30.00
 */
 #include<stdio.h>
 #include<stdlib.h>
-float DataAverage();
+void DataAverage();
 int main()
 {
-    float avg = DataAverage();
-
-    
-    printf("Average : %.2f",avg);
- 
+    DataAverage(); 
 }
-float DataAverage()
+void DataAverage()
 {
     int numbers;
     printf("Enter Number of Data Values :");
@@ -43,19 +39,20 @@ float DataAverage()
     if(Values == NULL)
     {
         printf("MEMORY ALLOCATION FAIL \n");
-        return 0.0;
+        
     }
     float total= 0;
     for(int i=0;i<numbers;i++){
         printf("Enter data #%d :",i+1);
-        scanf("%f",&Values[i]);
+        scanf("%f",Values+i);// print using pointer same as &Values[i]
         total=total+Values[i];
     }
 
+    float Average = total/numbers;
+    
     free(Values);
     Values = NULL;
 
-    float Average = total/numbers;
+    printf("Average = %2.f",Average);
 
-    return Average;
 }
