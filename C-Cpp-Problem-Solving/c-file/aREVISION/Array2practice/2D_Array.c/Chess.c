@@ -56,13 +56,13 @@ void input()
     for(int i=0;i<4;i++)
         printf("Player %d has total points = %d\n", i, get_player_score(i, score_board));
 
-    //display winner 
-    printf("\n WINNER of tournament is : player[%d]", winner(score_board));
-
     printf("\n Player Ranking :");
     Player_Ranking(score_board);
 
-    printf("\n");
+     //display winner 
+    printf("\n WINNER of tournament is : player[%d]", winner(score_board));
+
+    printf("\n\n");
     
 }
 int main()
