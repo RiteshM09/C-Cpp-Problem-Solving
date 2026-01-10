@@ -9,6 +9,9 @@
 /* 3) define a function which returns the score of a specific player
    4) define a function to find the winner of the tournament.
    5) define a function to display rank of the players.
+   6) define a function to run tournament, in which user has 
+      to enter result of each game and update score board using score_ _board function.
+      
 total matches : matches 6
 p0, p1, p2, p3
 
@@ -171,12 +174,11 @@ void Player_Ranking(int score_board[4][4]){
     // 4) player[3] -> 1 points 
 
     int score[4];
-    int player[4];
+
     int player_index[4];
 
     for(int p=0;p<4;p++){
         score[p]  = get_player_score(p, score_board);
-        player[p] = score[p];
         player_index[p] = p;
     }      
     // in player[4] array we have 0 1 2 3 -> 5 1 2 4
@@ -191,7 +193,5 @@ void Player_Ranking(int score_board[4][4]){
           printf("\n");
     }
       
-    
-
 
 }
