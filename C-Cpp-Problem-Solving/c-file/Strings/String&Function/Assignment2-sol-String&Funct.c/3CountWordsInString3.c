@@ -30,10 +30,6 @@ int main()
 {
     int i = 0, count = 0;
 
-    // Skip leading spaces
-    while (s[i] == ' ')
-        i++;
-
     while(s[i])
     {
         // Detect start of the word 
@@ -42,13 +38,6 @@ int main()
         i++;
     }
 
-    // If there was at least one word, add 1
-    if (s[0] != '\0' && s[0] != ' ')
-        count++;
-
-    if(count==0)// edge case
-        return 0;
-    
     return count;
 }
 
