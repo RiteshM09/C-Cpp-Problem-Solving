@@ -8,6 +8,7 @@ output 2d string : s[0][20] = hello
                    s[4][20] = \0
 // change trim sting logic use logic( 3 pointer i, j(new), space ) try yourself
 */
+
 #include<stdio.h>
 #include<string.h>
 #define MAX 100
