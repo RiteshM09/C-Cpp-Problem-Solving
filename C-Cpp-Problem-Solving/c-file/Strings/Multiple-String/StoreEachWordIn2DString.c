@@ -6,7 +6,7 @@ output 2d string : s[0][20] = hello
                    s[2][20] = is
                    s[3][20] = ritesh
                    s[4][20] = \0
-
+// change trim sting logic use logic( 3 pointer i, j(new), space ) try yourself
 */
 #include<stdio.h>
 #include<string.h>
@@ -45,12 +45,12 @@ void StoreStringWord(char str[MAX], char word[20][MAX]){// hell0
     // word[j][k++] = str[i++];
 
     int j=0,k=0;
-    for(i=0;str[i];i++,k++)
+    for(i=0;str[i];i++)
     {
         if(str[i]!=' ')
         {
             word[j][k]=str[i];
-
+            k++;
         }
         else if(str[i]==' ')
         {
@@ -59,13 +59,11 @@ void StoreStringWord(char str[MAX], char word[20][MAX]){// hell0
             // handling overflow of string 
             if (j >= count) break; // stop j when greater than 5, i.e 0,1,2,3,4
             
-            k=-1; // as k will increment after this condition soo set k=-1, so next becomes k=0
+            k=0; // reset k to 0 first index of jth block
         }
         
     }
-    
     // at last position
-    if(j<count)
     word[j][k]='\0';
 
     for(int d=0;d<count;d++)
@@ -95,47 +93,31 @@ int coutwords(char str[MAX])
    
     return count;
 }
-void TrimSpaces(char str[MAX]){
-    // if (str[i] == '\0')
-    // {
-    // str[0] = '\0';
-    //  return 0;
-    // }
+void TrimSpaces(char str[MAX])
+{
+    int i = 0;
 
-    //starting 
-    int i=0;
-    while(str[i]==' ')
+    // skip leading spaces
+    while (str[i] != '\0' && str[i] == ' ')
         i++;
-
-    // leading 
-    int len=strlen(str);
-    for(int j=len-1;j>i;j--) //not j should be greater than i 
-    {
-        if(str[j]!=' ')
-        {
-              str[j+1]='\0';// place null after non-spacing char
-              break;
-        }
-    }
-    // i is at starting non space char;
-    // j is at leading  non space char;
-    int write=i;
+    int write=0;
     while(str[i]!='\0')
     {
-        if(str[i]!=' ') // if its a non space keep it
+        if(str[i]!=' ')
         {
-            str[write]=str[i];
-            write++;
-            i++;
+            str[write++]=str[i];
         }
-        else if(str[i]==' ' && str[i-1]!=' ') // if its space and prev index is non space keep it
-        { 
-            str[write]=str[i];
-            write++;
-            i++;
-        }     
-        else
-            i++; 
+        else if(write>0 && str[i]==' ' && str[i-1]!=' ')// if space and pre is non-space then keep 
+        {
+            str[write++]=' ';
+        }
+        i++;
     }
+    // write pointer will have all extra space removed frm mid
+    // & write is after last spacing char ( can be space of '\0')
+    if(write>0 && str[write-1]==' ')
+        write--;
+
     str[write]='\0';
+    
 }
